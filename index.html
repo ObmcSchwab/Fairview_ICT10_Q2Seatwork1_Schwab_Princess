@@ -62,23 +62,20 @@
 </style>
 
 <body>
-    <div id="card">
-        <h1>BADMINTON CLUB🏸</h1>
-        <div id="types"></div>
+     <div id="card">
+        <h1>🏸 Badminton Club Checker</h1>
+        <p>Enter your name to see if you’re part of the club!</p>
 
-        <hr>
-        <h2>CANDIDATE VERIFICATION SYSTEM</h2>
-        <input type="text" id="num1" placeholder="Enter first name">
+        <input type="text" id="fname" placeholder="First Name">
         <br>
-        <input type="text" id="num2" placeholder="Enter last name">
+        <input type="text" id="lname" placeholder="Last Name">
         <br><br>
 
-       
+        <button type="button" py-click="check_member">Check Membership</button>
 
         <div id="result"></div>
     </div>
 
     <script type="py" src="main.py"></script>
-
 </body>
 </html>
