@@ -10,22 +10,22 @@
 <body>
     <style>
     body {
-        font-family: 'Trebuchet MS', sans-serif;
-        background: linear-gradient(to right, #001f4d, #dcd2f7);
-        color: #2c2c2c;
-        text-align: center;
-        padding: 30px;
-    }
-
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("https://i.pinimg.com/474x/70/bb/1e/70bb1e22f39392a3c18f983749f79409.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px;
+}
     #card {
-        background: #fff;
-        border-radius: 15px;
-        padding: 25px;
-        width: 60%;
-        margin: auto;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 30px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
     h1 {
         color: #001f4d;
         margin-bottom: 15px;
@@ -66,14 +66,24 @@
         <h1>🏸 Badminton Club Checker</h1>
         <p>Enter your name to see if you’re part of the club!</p>
 
-        <input type="text" id="fname" placeholder="First Name">
-        <br>
-        <input type="text" id="lname" placeholder="Last Name">
-        <br><br>
+           <div>
+                    <input type="text" name="fn" id="fn" placeholder="Enter your first name here..." class="form-control">
 
-        <button type="button" py-click="check_member">Check Membership</button>
+                <br><br>
 
-        <div id="result"></div>
+                    <input type="text" name="ln" id="ln" placeholder="Enter your last name here..." class="form-control">
+
+                <br>
+
+            <i><div id="display"></div></i><br>
+
+            <button type="button" py-click="get_IN">Verify</button>
+
+        <br></form>
+    </div>
+
+    <div>
+        <p id="output"></p>
     </div>
 
     <script type="py" src="main.py"></script>

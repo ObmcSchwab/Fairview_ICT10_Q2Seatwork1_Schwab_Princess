@@ -1,36 +1,12 @@
-from pyscript import display, document
+from pyscript import display, document #link to index...?
 
-# List of badminton club members
-badminton_members = [
-    "Zeek Fernandez ",
-    "Cheree Mendoza",
-    "Therese Reyes",
-    "Zoey Ledres",
-    "Princess Schwab ",
-    "Adrian Gavina",
-    "Kevin Polillo",
-    "Anton Vinzon",
-    "Nelson Velasco ",
-    "Earl Aljo",
-    "Elise Ramos",
-     "Austin Ocampo",
-    "Anton Vinzon" 
-]
+members = [ "Zeek Fernandez ", "Cheree Mendoza", "Therese Reyes","Zoey Ledres", "Princess Schwab ", "Adrian Gavina", "Kevin Polillo", "Anton Vinzon", "Nelson Velasco ", "Earl Aljo","Elise Ramos", "Austin Ocampo", "Anton Vinzon" ] #im pretty sure this is the ganglang thats allowed
 
-def check_member(e):
-    # Get input values
-    first = document.getElementById("fname").value.strip()
-    last = document.getElementById("lname").value.strip()
-    full_name = f"{first} {last}"
+def get_IN(e):
+    name1 = document.getElementById("fn").value
+    name2 = document.getElementById("ln").value
 
-    # Membership check
-    message = (
-        f"🏸 Congratulations {full_name}! You are part of the Badminton Club."
-        if full_name in badminton_members
-        else f"❌ Sorry {full_name}, you are not on the Badminton Club list."
-    )
+    full_name = f"{name1.strip()} {name2.strip()}" #combines name
+    is_member = full_name in members #true or false
 
-    # Display result + extra message
-    display(message, target="result")
-    display("✨ Keep practicing and enjoy the game! ✨", target="extra")
-
+    display("Oops! you are not on the Badminton Club list.", target="output") #displays when not a member (?)
