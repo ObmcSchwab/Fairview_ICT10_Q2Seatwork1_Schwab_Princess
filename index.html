@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Seatwork 1</title>
+</head>
+<body>
+    <style>
+    body {
+        font-family: 'Trebuchet MS', sans-serif;
+        background: linear-gradient(to right, #001f4d, #dcd2f7);
+        color: #2c2c2c;
+        text-align: center;
+        padding: 30px;
+    }
+
+    #card {
+        background: #fff;
+        border-radius: 15px;
+        padding: 25px;
+        width: 60%;
+        margin: auto;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        color: #001f4d;
+        margin-bottom: 15px;
+    }
+
+    input {
+        padding: 10px;
+        margin: 8px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 70%;
+    }
+
+    button {
+        background-color: #001f4d;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #3b364a;
+    }
+
+    #types, #result {
+        margin-top: 20px;
+        font-weight: bold;
+        color: #3b364a;
+    }
+</style>
+
+<body>
+    <div id="card">
+        <h1>BADMINTON CLUB🏸</h1>
+        <div id="types"></div>
+
+        <hr>
+        <h2>CANDIDATE VERIFICATION SYSTEM</h2>
+        <input type="text" id="num1" placeholder="Enter first name">
+        <br>
+        <input type="text" id="num2" placeholder="Enter last name">
+        <br><br>
+
+       
+
+        <div id="result"></div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
